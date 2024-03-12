@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ducky template for portfolio</title>
+    <!--add link for tailwind css-->
+    <link rel="stylesheet" href="/src/tailwind/output.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--this link for JQuery-->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <!--this link for smooth scrolling effect-->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <!--link for Granim.js gradian background animation-->
+    <script src="/node_modules/granim/dist/granim.js"></script>
+    <!--add link for GSAP scrolling animation-->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!--next link-->
+  </head>
+  <body class="bg-black">
+    <div class="header-sec-index"></div>
+    <script>
+      $(".header-sec-index").load("/components/header.html");
+    </script>
+    <div class="body-container-sec xl:px-28 lg:px-16 md:px-12 px-5 text-white">
+      <div class="gsap-scroll landing-title py-20">
+        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl">
+          Web Design <br />
+          & Web Development
+        </h1>
+      </div>
+
+      <div
+        class="gsap-scroll text-center md:text-left div-sec-landing md:flex md:justify-between md:my-20 my-16"
+      >
+        <div class="div text-gray-500">
+          <p>Let's about ut!<br /><b>sergei@desope.net</b></p>
+        </div>
+        <div class="div">
+          <p class="pt-5 md:pt-0 md:w-96 text-gray-500">
+            Hello, I'm Dcuky, an product designer focusing on barand identity,
+            UI/UX, advertising, and no-code instruments. So lets make your
+            business look brtter!
+          </p>
+        </div>
+      </div>
+      <div class="landing-sec-next md:my-52 text-white bg-black">
+        <div class="md:flex md:justify-between">
+          <div class="div gsap-scroll">
+            <h1 class="md:text-4xl font-bold text-2xl mb-3">
+              Skills & Services
+            </h1>
+            <p class="w-96 md:mt-5 text-lg">
+              Specializing in graphic design, I bring your brand to life through
+              distinctive logos, polished presentedtions, and stunning landing
+              pages. Lets elevate your business aesthetics
+            </p>
+          </div>
+          <div class="div md:py-0 py-10 gsap-scroll">
+            <h1 class="text-3xl md:text-4xl font-bold">
+              What can i offer you?<br />
+              Let's figure it out
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-for-home-content">
+        <div class="md:grid md:grid-cols-2 md:gap-32">
+          <div class="div md:py-0 py-10 gsap-scroll">
+            <h1 class="md:text-3xl md:mb-5 font-bold text-2xl mb-3">
+              Branding identity
+            </h1>
+            <p class="md:text-lg">
+              For me, branding is more then creating an appealing image. it's
+              about shaping a charecter that reflects the essence of your brand,
+              i aim to highlight not only visual but also conceptual aspects,
+              ensuring your brand is not just recognizable but fully express its
+              uniqueness.
+            </p>
+          </div>
+          <div class="div md:py-0 py-10 gsap-scroll">
+            <h1 class="md:text-3xl md:mb-5 font-bold text-2xl mb-3">
+              Logotype identity
+            </h1>
+            <p class="md:text-lg">
+              my logo design process begin with the hand draw sketch,adding
+              unparalleled uniqueness to each sympol, infoused with client
+              wishes and a distinctive narative, each logo becomes not just a
+              brand element but a businesss card for its unique personality.
+            </p>
+          </div>
+          <div class="div md:py-0 py-10 gsap-scroll">
+            <h1 class="md:text-3xl md:mb-5 font-bold text-2xl mb-3">
+              Landing Pages
+            </h1>
+            <p class="md:text-lg">
+              My landing pages are not just effective marketing tools but also
+              user friendly spaces for your clients, i pay attention to
+              simplicity and logic, aiming for elements that not only suit you
+              but also appeal to your audience. the result is pages that please
+              the eye and are easily digestible.
+            </p>
+          </div>
+          <div class="div md:py-0 py-10 gsap-scroll">
+            <h1 class="md:text-3xl md:mb-5 font-bold text-2xl mb-3">
+              Presentation design
+            </h1>
+            <p class="md:text-lg">
+              My presentations go beyond more descriptions; they are
+              visualization of your message. i infuse them with not just
+              information but also emotions, creating, creating slides that not
+              only tell but visually persuade. each element serves as a
+              complement to your performance, making the presentation an itegral
+              part of your impact.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--this div for hire now button-->
+      <div
+        class="div-sec-for-hirenow my-10 md:my-20 flex justify-center gsap-scroll"
+      >
+        <button
+          class="hire-now-btn p-1 px-3 rounded-full bg-gray-500 md:p-2 md:px-7 md:text-xl hover:bg-slate-200 hover:text-black hover:duration-700"
+        >
+          Hire Now
+        </button>
+      </div>
+      <!--this section for projects-->
+      <div class="div-for-projects">
+        <div class="div-project-heading md:pb-16 pb-8 gsap-scroll">
+          <h1 class="text-4xl md:text-6xl">Projects</h1>
+        </div>
+        <!--project cards-->
+        <div class="div-for-blog-card">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 gap-5"
+          >
+            <!--First card-->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            <!--second card -->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <!--Third card section-->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--this section for Blog sections-->
+      <div class="div-for-blog">
+        <div class="gsap-scroll div-blog-heading md:pb-16 md:pt-20 pb-10 mt-10">
+          <h1 class="md:text-6xl text-4xl">Blogs</h1>
+          <p class="pt-4 text-lg">
+            Explore the creative journey through the lens of my design process
+            on the Blog page. This is where pixels meet prose, and I share
+            insights, tips, and behaind the scenes stories of my graphic design
+            adventures.
+          </p>
+        </div>
+        <!--project cards-->
+        <div class="div-for-blog-card">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-5 gap-5"
+          >
+            <!--First card-->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+
+            <!--second card -->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+            <!--Third card section-->
+            <div
+              class="gsap-scroll div-blog-card border-2 border-gray-700 p-3 rounded-3xl hover:border-white hover:duration-700"
+            >
+              <img
+                src="https://images.pexels.com/photos/176837/pexels-photo-176837.jpeg"
+                alt=""
+                class="rounded-3xl"
+              />
+              <h1 class="font-bold my-5 text-xl md:text-2xl">
+                Logotype & Brand Design
+              </h1>
+              <p class="text-gray-400">
+                Discovery my Logotypes & Branding designers fusion of creativity
+                and strategy that embodies unique brand identities, Transform
+                your brands story into visualy compelling logos and designers
+              </p>
+              <button
+                class="read-more-btn flex justify-evenly my-5 bg-gray-700 p-2 px-4 rounded-full hover:bg-white hover:text-black hover:duration-700"
+              >
+                <div>Read More</div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                    />
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-sec"></div>
+    <script>
+      $(".footer-sec").load("/components/footer.html");
+    </script>
+    <script src="/src/lenisJS/lenis_src.js"></script>
+  </body>
+  <script src="/src/gsap/gsap.js"></script>
+</html>
